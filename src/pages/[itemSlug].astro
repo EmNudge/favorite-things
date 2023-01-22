@@ -1,0 +1,120 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { marked } from "marked";
+import { allThings } from "../data";
+import { dedent } from "../utils/dedent";
+
+export function getStaticPaths() {
+    return allThings.map(({ slug }) => ({ params: { itemSlug: slug } }));
+}
+
+const { itemSlug } = Astro.params;
+const item = allThings.find((thing) => thing.slug === itemSlug);
+
+if (!item) return Astro.redirect("/404");
+
+const pitchRender = marked.parse(dedent(item.pitch ?? ''));
+---
+
+<Layout title={item.title}>
+    <article>
+        <h1 style="view-transition-name: main-title;">
+            <a href="/">&larr;</a>
+            {item.title}
+        </h1>
+
+        <div class="product">
+            <img src={`/products/${item.image}`} alt={item.title} />
+            <div class="quick-description">
+                <div class="text">
+                    <p>{item.description ?? ""}</p>
+                    <ul>
+                        {item.points.map((point) => 
+                            <li>
+                                <img src="/icons/check.svg" alt="check" aria-hidden />
+                                <span class="point-text">{point}</span>
+                            </li>
+                        )}
+                    </ul>
+                </div>
+                <a href={item.href}>Link To Item &nearr;</a>
+            </div>
+        </div>
+        <div class="pitch" set:html={pitchRender} />
+    </article>
+</Layout>
+
+<style>
+    h1 {
+        margin-bottom: 2rem;
+    }
+    a {
+        color: rgb(198, 49, 153);
+    }
+    h1 a {
+        text-decoration: none;
+        background-image: linear-gradient(
+            45deg,
+            rgb(195, 67, 180),
+            rgb(68, 11, 68)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-right: 0.5rem;
+    }
+    .product {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+        align-items: center;
+        min-height: 15rem;
+    }
+    .product img {
+        max-height: 300px;
+        max-width: 300px;
+        view-transition-name: product-image;
+    }
+    .quick-description {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+    .quick-description a {
+        font-size: 2rem;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .quick-description ul {
+        list-style: none;
+        display: grid;
+        gap: 10px;
+    }
+    .quick-description ul li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .quick-description img {
+        height: 24px;
+    }
+    .text p {
+        font-size: 1.3rem;
+    }
+    .point-icon {
+        width: 16px;
+        height: 16px;
+        border: 3px solid black;
+        border-radius: 4px;
+        display: grid;
+        place-items: center;
+    }
+    .point-icon span {
+        transform: scale(1.8) translate(-2px, -2px);
+        display: block;
+    }
+    .pitch {
+        margin-top: 3rem;
+        color: #222;
+    }
+</style>
