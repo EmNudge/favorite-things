@@ -6,11 +6,9 @@ import Section from "../components/Section.astro";
 import { favoriteThings } from "../data";
 ---
 
-<!-- <script>
-	document.querySelector('main')?.addEventListener('click', e => {
-		e.target
-	})
-</script> -->
+<script>
+	sessionStorage.setItem('navigation', 'true');
+</script>
 
 <Layout title="My Favorite Things">
 	<h1 style="view-transition-name: main-title;">My <span class="text-gradient">Favorite</span> ...</h1>
