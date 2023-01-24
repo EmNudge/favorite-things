@@ -143,18 +143,20 @@ const pitchRender = marked.parse(dedent(item.pitch ?? ''));
         background: var(--accent);
         z-index: -1;
         filter: brightness(120%) hue-rotate(10deg);
-        opacity: .1;
+        opacity: .06;
     }
 
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 650px) {
         .product {
             grid-template-columns: 1fr;
+            justify-items: center;
         }
         .pitch {
             margin-top: 1rem;
         }
         .quick-description a {
             margin: 1rem 0;
+            text-align: center;
         }
     }
 </style>
