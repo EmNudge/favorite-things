@@ -16,20 +16,20 @@ if (!item) return Astro.redirect("/404");
 const pitchRender = marked.parse(dedent(item.pitch ?? ''));
 ---
 
-<script>
-    const aTag = document.querySelector('article h1 a');
-    const hasNavigatedFromMainPage = Boolean(sessionStorage.getItem('navigation'));
-    if (aTag) {
-        aTag.addEventListener('click', e => {
-            if (hasNavigatedFromMainPage) {
-                e.preventDefault();
-                history.back();
-            }
-        });
-    }
-</script>
-
 <Layout title={item.title}>
+    <script>
+        const aTag = document.querySelector('article h1 a');
+        const hasNavigatedFromMainPage = Boolean(sessionStorage.getItem('navigation'));
+        if (aTag) {
+            aTag.addEventListener('click', e => {
+                if (hasNavigatedFromMainPage) {
+                    e.preventDefault();
+                    history.back();
+                }
+            });
+        }
+    </script>
+
     <article>
         <h1 style="view-transition-name: main-title;">
             <a href="/">&larr;</a>
