@@ -1,0 +1,54 @@
+---
+export interface Props {
+    title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<div class="tooltip">
+    <slot />
+    <div class="text-container">
+        <div class="text">{title}</div>
+    </div>
+</div>
+
+<style>
+    .tooltip {
+        position: relative;
+        display: inline-block;
+        --bg: #909090;
+    }
+
+    .tooltip .text-container {
+        visibility: hidden;
+        background-color: var(--bg);
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        bottom: 125%;
+        left: 0;
+        right: 0;
+        opacity: 0;
+        z-index: 1;
+        transition: opacity 0.3s;
+    }
+
+    .tooltip .text-container::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: var(--bg) transparent transparent transparent;
+    }
+
+    .tooltip:hover .text-container {
+        visibility: visible;
+        opacity: 1;
+    }
+</style>

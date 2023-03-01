@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Tooltip from "../components/Tooltip.astro";
 import { marked } from "marked";
 import { allThings } from "../data";
 import { dedent } from "../utils/dedent";
@@ -37,7 +38,9 @@ const pitchRender = marked.parse(dedent(item.pitch ?? ''));
         </h1>
 
         <div class="product">
-            <img src={`/products/${item.image}`} alt={item.title} />
+            <div class="product-image">
+                <img src={`/products/${item.image}`} alt={item.title} />
+            </div>
             <div class="quick-description">
                 <div class="text">
                     <p>{item.description ?? ""}</p>
@@ -50,7 +53,9 @@ const pitchRender = marked.parse(dedent(item.pitch ?? ''));
                         )}
                     </ul>
                 </div>
-                <a class="styled" href={item.href}>Link To Item &nearr;</a>
+                <Tooltip title="Not an affiliate link!">
+                    <a class="styled" href={item.href}>Link To Item &nearr;</a>
+                </Tooltip>
             </div>
         </div>
         <div class="pitch" set:html={pitchRender} />
@@ -103,6 +108,10 @@ const pitchRender = marked.parse(dedent(item.pitch ?? ''));
         grid-gap: 2rem;
         align-items: center;
         min-height: 15rem;
+    }
+    .product .product-image {
+        display: flex;
+        justify-content: center;
     }
     .product img {
         max-height: 300px;
@@ -177,6 +186,10 @@ const pitchRender = marked.parse(dedent(item.pitch ?? ''));
         }
         .pitch {
             margin-top: 1rem;
+        }
+        .quick-description {
+            align-items: center;
+            gap: 1rem;
         }
         .quick-description a {
             margin: 1rem 0;

@@ -176,6 +176,24 @@ export const favoriteThings = Object.entries(
                 You can also set timers and alarms really quickly!
             `),
       },
+      {
+        href: "https://www.amazon.com/dp/B07HYX9P88/",
+        title: "Corsair HS80",
+        image: "hs80.png",
+        description: "A wireless headset that isn't horrible",
+        points: [
+          "wireless",
+          "non-bluetooth",
+          "the best option for now",
+        ],
+        pitch: (`
+                The best wireless headphones. Really. 
+
+                The bluetooth standard has been a serious obstacle in hardware audio improvements. It hard-limits the audio quality by choosing a small bandwidth and bad codec.
+
+                These don't use bluetooth! It provides a wireless access point via USB which does its own thing! 
+            `),
+      },
     ],
     "Travel Gear": [
       {
