@@ -195,6 +195,38 @@ export const favoriteThings = Object.entries(
             `),
       },
     ],
+    "Every Day Carry": [
+      {
+        href: "https://www.amazon.com/dp/B085DVGW6M/",
+        title: "Water Bottle (with straw)",
+        image: "bottle.png",
+        description: "Sip sip yum yum water",
+        points: ["water bottle", "with straw", "yum, water"],
+        pitch: `
+            Let me guess, you're still on those hydroflasks? That's **so** 2018. All us cool kids are drinking from these new water bottles (with straws)!
+
+            Your time is precious! You've got businesses to do business with! You have meetings to meet! You have toddlers to fight! Why waste energy tilting the bottle up in the air?! Who knows what could happen?!
+
+            You could fracture your nose.
+            
+            You could get water everywhere and soil your Merino Wool sweater.
+        `,
+      },
+      {
+        href: "https://www.amazon.com/dp/B07DP6X7Q8",
+        title: "Cherry Chapstick",
+        image: "chapstick.png",
+        description: "Make lips smell good and not crack",
+        points: ["water bottle", "with straw", "yum, water"],
+        pitch: `
+            Burt's Bees can go missing for all I care! The real professionals use dollar-store cherry chapstick for keeping their smoochers nice and smooth.
+
+            I keep one strapped on me at all times. Never leave home without it. My lips are perfectly smooth and ready for action. You never know when it will come in handy.
+
+            People around me live in terror of how perfectly non-chapped my lips are.
+        `,
+      },
+    ],
     "Travel Gear": [
       {
         href: "https://www.amazon.com/dp/B087QVKWLG/",
