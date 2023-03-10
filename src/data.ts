@@ -177,7 +177,7 @@ export const favoriteThings = Object.entries(
             `),
       },
       {
-        href: "https://www.amazon.com/dp/B07HYX9P88/",
+        href: "https://www.amazon.com/dp/B09BBPTDWX/",
         title: "Corsair HS80",
         image: "hs80.png",
         description: "A wireless headset that isn't horrible",
