@@ -217,7 +217,7 @@ export const favoriteThings = Object.entries(
         title: "Cherry Chapstick",
         image: "chapstick.png",
         description: "Make lips smell good and not crack",
-        points: ["water bottle", "with straw", "yum, water"],
+        points: ["lipstick (for MEN)", "yum yum cherry smell good", "be a non-chapped chap"],
         pitch: `
             Burt's Bees can go missing for all I care! The real professionals use dollar-store cherry chapstick for keeping their smoochers nice and smooth.
 
@@ -268,7 +268,7 @@ export const favoriteThings = Object.entries(
 
             Uses real razor blades, so replacing the head is super cheap (even though the handle itself is crazy expensive). It bends to the shape of the surface, so it's almost always at the right angle.
 
-            Less worringly about cutting yourself, more worrying about getting that beard-shape just right.
+            Less worring about cutting yourself, more worrying about getting that beard-shape just right.
         `,
       },
       {
