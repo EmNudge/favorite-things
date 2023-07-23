@@ -177,6 +177,36 @@ export const favoriteThings = Object.entries(
             `),
       },
       {
+        href: 'https://www.amazon.com/dp/B09SWW583J',
+        title: 'E-ink Tablet',
+        image: 'kindle.png',
+        points: ['easy on eyes', 'long battery life', 'lightweight and small'],
+        description: 'Detatch from the internet, but keep your eyes on the screen',
+        pitch: `
+          E-ink tablets are a game changer for reading. The screen mimics real paper by magnatizing ink blobs instead of LEDs so it's easy on your eyes. You can read for hours without eye strain and with little decrease in battery life.
+
+          I like reading, but books are heavy. If you're commuting or vacationing, an e-ink tablet is perfect. They're lightweight, have long battery life, and hold thousands of books. The feel is never as nice as a real book, but it's a good compromise for convenience.
+
+          Which tablet should you get? Go for the cheapest one until you need to upgrade. There are some great ones out there, but they're pretty expensive and not worth the upgrade until you've experienced it already and know what you're looking for.
+        `
+      },
+      {
+        href: 'https://www.amazon.com/dp/B00CXSJUZS',
+        title: 'Teenage Engineering OP-1',
+        image: 'op-1.png',
+        points: [
+          "synthesizer",
+          "drum machine",
+          "sampler",
+        ],
+        description: 'An all-in-one music production powerhouse',
+        pitch: `
+          Before I start, yes, it's expensive. It's really expensive. But it's also somewhat of an art piece. It's compact and it does it all. It's restrictive in certain aspects, but that restriction breeds creativity.
+
+          Teenage Engineering knows what they're doing. Everything they produce is a piece of art, but also almost prohibitively expensive. Save money by buying it used. The original OP-1 is still incredible after all this time and many are letting theirs go in near perfect condition.
+        `
+      },
+      {
         href: "https://www.amazon.com/dp/B09BBPTDWX/",
         title: "Corsair HS80",
         image: "hs80.png",
@@ -226,6 +256,18 @@ export const favoriteThings = Object.entries(
             People around me live in terror of how perfectly non-chapped my lips are.
         `,
       },
+      {
+        href: "https://www.amazon.com/dp/B01CTKEKX6",
+        title: "Mint Toothpicks",
+        image: "mint_toothpicks.png",
+        description: "Minty flavor and a good fidget",
+        points: ["get those popcorn kernels out", "minty taste", "feels like a cigarette (but healthier)"],
+        pitch: `
+            I love offering these to guests. Is this socially acceptable? Probably not, but it's a lot of fun. These are incredibly minty and completely throw people off when they're expenting a light mint taste.
+
+            It's also a good way to avoid habitual snacking. When your hands want to wander to some chips, pull out a toothpick instead. You also look super cool.
+        `,
+      },
     ],
     "Travel Gear": [
       {
@@ -252,6 +294,34 @@ export const favoriteThings = Object.entries(
             Watch movies! Play spotify! Browse YouTube! Ask google assistant dumb questions.
 
             It's $30, so Google is definitely losing money on this. But they also **really** want you to buy one so... be cautious?
+        `,
+      },
+      {
+        href: "https://www.amazon.com/gp/product/B081MK7B5C",
+        title: "Collapsable Water Bottle",
+        image: "collapsable_watter_bottle.png",
+        description: 'Stay hydrated and carry less',
+        points: ["weightless when empty", "only as big as it needs to be", "good for storing vinegar if you're into that idk"],
+        pitch: `
+            Don't get me wrong. I love a good [metal water bottle (with straw)](/water_bottle_(with_straw)) as much as the next guy, but when traveling, you gotta travel light.
+
+            A collapsible water bottle is the lightest way to stay hydrated in foreign lands. When empty, it takes up virtually no space in your bag. But when you need to hydrate, it expands to a normal-sized bottle.
+
+            It's even more compact than a regular plastic water bottle and significantly cheaper in the long term. Don't want it taking up room in your bag directly? Clip it to the side with the attached carabiner!
+        `,
+      },
+      {
+        href: "https://www.amazon.com/gp/product/B0BNMVB18C",
+        title: "Collapsable Neck Pillow",
+        image: "collapsable_neck_pillow.png",
+        description: 'Sleep well on the go',
+        points: ["quick to expand", "quick to deflate", "absurd and funny looking (bonus points)"],
+        pitch: `
+            It's a long flight and you're the opposite of well rested. You try to find a comfortable position to get some shut-eye, but economy class seats were made with some sickening anti-homeless architecture and everything hurts all the time. You find a position and wake up 3 hours later covered in sweat with a massive crick in your neck and imprints on your face befitting a gaelic warrior.
+
+            Neck pillows are an obvious solution, but they take up a lot of space for something you'll only use on the commute there and back. This one is quick to blow up and fold back into your bag.
+            
+            It's not as soft as a memory foam pillow, but it makes up for it by the unique shape. You can rest your head forwards, which is not something you get with most conventional neck pillows.
         `,
       },
     ],
