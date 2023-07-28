@@ -41,7 +41,7 @@ export const favoriteThings = Object.entries(
         pitch: (`
             What's your alternative? A knife?! Heresy! Heresy, I say!
 
-            You can use a chefs knife and mince your garlic real smooth (ish) and get a bunch of tiny clumps. Better yet, you can use a grater for a phenominal result and almost grind your finger down!
+            You can use a chef's knife and mince your garlic real smooth (ish) and get a bunch of tiny clumps. Better yet, you can use a grater for a phenomenal result and almost grind your finger down!
 
             OR! OR! OR you can use a garlic press and get the best of both worlds! A nice paste and all your fingers intact.
         `),
@@ -115,7 +115,7 @@ export const favoriteThings = Object.entries(
       {
         href: "https://www.apple.com/shop/buy-mac/macbook-air/m1-chip",
         title: "M1+ Macbook",
-        image: "macbook.png",
+        image: "macbook_m1.png",
         description: "The best laptop, good for all ocassions",
         points: ["very fast", "lightweight", "trackpad"],
         pitch: (`
@@ -136,13 +136,13 @@ export const favoriteThings = Object.entries(
         description: "The best laptop, good for all ocassions",
         points: ["reading", "drawing", "sculpting"],
         pitch: (`
-                Look, I don't know what Apple is doing, but Apple clearly knows what Apple doing because they pop out banger products.
+                Look, I don't know what Apple is doing, but Apple clearly knows what Apple is doing because they pop out banger products.
 
                 Pricey? Maybe. But also genre-defining. The ipad is the best tablet hands-down. The competition has been running into brick walls and restarting under new names for a decade.
 
                 I use mine to read articles a lot. It's also great for watching movies in the kitchen. Or you can draw on it. Or take notes. 
 
-                There's also this amazing app called [Nomad Sculpt](https://nomadsculpt.com/) which lets you do 3D sculpting on the tablet. It's incredibley relaxing. Also here's a [secret web demo](https://nomadsculpt.com/demo) of their app.
+                There's also this amazing app called [Nomad Sculpt](https://nomadsculpt.com/) which lets you do 3D sculpting on the tablet. It's incredibly relaxing. Also here's a [secret web demo](https://nomadsculpt.com/demo) of their app.
             `),
       },
       {
@@ -169,9 +169,9 @@ export const favoriteThings = Object.entries(
           "minimal features",
         ],
         pitch: (`
-                Smart watches are cool. I don't love the aesthetics, but they help me get away from my phone without worrying about missing important notifications. My watch is my first line of defence before I get sucked into the warp of the most interesting device on the planet when trying to check up on texts. 
+                Smartwatches are cool. I don't love the aesthetics, but they help me get away from my phone without worrying about missing important notifications. My watch is my first line of defence before I get sucked into the warp of the most interesting device on the planet when trying to check up on texts. 
 
-                In the same regard, the upside over other smart watches is that it has less features (so it's less distracting) and it can last 2 weeks (so you can sleep with it). You can also sleep with other watches, but then you can't have it on all day. Charging the watch for some amount of time needs to be built into the routine.
+                In the same regard, the upside over other smartwatches is that it has less features (so it's less distracting) and it can last 2 weeks (so you can sleep with it). You can also sleep with other watches, but then you can't have it on all day. Charging the watch for some amount of time needs to be built into the routine.
 
                 You can also set timers and alarms really quickly!
             `),
@@ -263,7 +263,7 @@ export const favoriteThings = Object.entries(
         description: "Minty flavor and a good fidget",
         points: ["get those popcorn kernels out", "minty taste", "feels like a cigarette (but healthier)"],
         pitch: `
-            I love offering these to guests. Is this socially acceptable? Probably not, but it's a lot of fun. These are incredibly minty and completely throw people off when they're expenting a light mint taste.
+            I love offering these to guests. Is this socially acceptable? Probably not, but it's a lot of fun. These are incredibly minty and completely throw people off when they're expecting a light mint taste.
 
             It's also a good way to avoid habitual snacking. When your hands want to wander to some chips, pull out a toothpick instead. You also look super cool.
         `,
@@ -324,6 +324,22 @@ export const favoriteThings = Object.entries(
             It's not as soft as a memory foam pillow, but it makes up for it by the unique shape. You can rest your head forwards, which is not something you get with most conventional neck pillows.
         `,
       },
+      {
+        href: "https://www.amazon.com/gp/product/B08QZ78DZF",
+        title: "Rechargable Batteries",
+        image: "battery.png",
+        description: 'Lithium-ion and AA',
+        points: ["long-lasting", "rechargeable", "no extra cables"],
+        pitch: `
+            I'll be honest - I love these. What a phenomenal invention. I've never been more passionately in love with a battery.
+
+            The battery itself has the port! You plug the wire into the battery! No battery recharge dock or specialized tools!
+
+            Some items will never upgrade to rechargeable lithium-ion batteries and some items use weirdly specific cables (e.g. every electric shaver). When traveling, it's important to cut down on extra items and stick to multi-use ones. I can stop worrying about "how much charge I have left" and just recharge these bad boys with a USB-C cable!
+
+            Note that for these specifically, I found I had to use the included cable over a regular one to get any charge, but it's compact enough that it's not really an issue.
+        `,
+      },
     ],
     "Personal Care Tools": [
       {
@@ -338,7 +354,7 @@ export const favoriteThings = Object.entries(
 
             Uses real razor blades, so replacing the head is super cheap (even though the handle itself is crazy expensive). It bends to the shape of the surface, so it's almost always at the right angle.
 
-            Less worring about cutting yourself, more worrying about getting that beard-shape just right.
+            Less worrying about cutting yourself, more worrying about getting that beard-shape just right.
         `,
       },
       {
@@ -348,7 +364,7 @@ export const favoriteThings = Object.entries(
         description: 'For REAL MANLY men and also me sometimes',
         points: ["eyebrow shaping", "scary (make feel cool)"],
         pitch: `
-            Only plausable option for shaping your eyebrows. Those dollar store plastifc shapers are only good for 1 or 2 times.
+            Only plausible option for shaping your eyebrows. Those dollar store plastic shapers are only good for 1 or 2 times.
             
             I kind of wanted something that used regular blades so that I could share blades with the [Leaf Razor](/leaf_razor). You do have to be very careful with how you angle it, but you can't use a regular razor to get at your eyebrows since you end up covering your eyes.
         `,
@@ -376,7 +392,7 @@ export const favoriteThings = Object.entries(
         description: 'All who enter do not return',
         points: ["memory safe", "low/high level", "very cool", "join us"],
         pitch: `
-            On top of being a language with "memory safety" or whatever that means, it's also a modern language built on top of all the learnings of the previous oens. Its design just makes sense in so many areas.
+            On top of being a language with "memory safety" or whatever that means, it's also a modern language built on top of all the learnings of the previous ones. Its design just makes sense in so many areas.
 
             [Algebraic types](https://en.wikipedia.org/wiki/Algebraic_data_type), [HOF](https://en.wikipedia.org/wiki/Higher-order_function) chaining, expression flow control, immutability by default!
 
@@ -395,3 +411,5 @@ export const allThings: PagedFavoriteItem[] = favoriteThings.flatMap((
     return { ...item, category, slug: getSlug(item.title) };
   })
 );
+
+console.log(JSON.stringify(allThings.map(item => item.pitch)))
