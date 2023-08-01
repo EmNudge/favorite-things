@@ -17,7 +17,7 @@ if (!item) return Astro.redirect("/404");
 const pitchRender = marked.parse(dedent(item.pitch ?? ''));
 ---
 
-<Layout title={item.title}>
+<Layout title={item.title} product={{ description: item.description, image: item.image }}>
     <script>
         const aTag = document.querySelector('article h1 a');
         const hasNavigatedFromMainPage = Boolean(sessionStorage.getItem('navigation'));

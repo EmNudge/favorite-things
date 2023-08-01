@@ -5,8 +5,8 @@ export interface FavoriteItem {
   title: string;
   image: string;
   points: string[];
-  description?: string;
-  pitch?: string;
+  description: string;
+  pitch: string;
 }
 
 export const favoriteThings = Object.entries(
@@ -411,5 +411,3 @@ export const allThings: PagedFavoriteItem[] = favoriteThings.flatMap((
     return { ...item, category, slug: getSlug(item.title) };
   })
 );
-
-console.log(JSON.stringify(allThings.map(item => item.pitch)))
