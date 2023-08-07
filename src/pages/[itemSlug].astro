@@ -1,9 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Tooltip from "../components/Tooltip.astro";
+import BackButton from "../components/BackButton.astro";
 import { marked } from "marked";
 import { allThings } from "../data";
 import { dedent } from "../utils/dedent";
+import { getTransitionName } from "../utils/getTransitionName";
 
 export function getStaticPaths() {
     return allThings.map(({ slug }) => ({ params: { itemSlug: slug } }));
@@ -13,39 +15,28 @@ const { itemSlug } = Astro.params;
 const item = allThings.find((thing) => thing.slug === itemSlug);
 
 if (!item) return Astro.redirect("/404");
+const { title, description, image, points, pitch, href } = item;
 
-const pitchRender = marked.parse(dedent(item.pitch ?? ''));
+const pitchRender = marked.parse(dedent(pitch ?? ''));
+const { transitionNameImage, transitionNameTitle } = getTransitionName(title);
 ---
 
-<Layout title={item.title} product={{ description: item.description, image: item.image }}>
-    <script>
-        const aTag = document.querySelector('article h1 a');
-        const hasNavigatedFromMainPage = Boolean(sessionStorage.getItem('navigation'));
-        if (aTag) {
-            aTag.addEventListener('click', e => {
-                if (hasNavigatedFromMainPage) {
-                    e.preventDefault();
-                    history.back();
-                }
-            });
-        }
-    </script>
-
+<Layout title={title} product={{ description: description, image: image }}>
     <article>
-        <h1 style="view-transition-name: main-title;">
-            <a href="/" class="styled">&larr;</a>
-            {item.title}
+        <h1 transition:name={transitionNameTitle}>
+            <BackButton />
+            {title}
         </h1>
 
         <div class="product">
             <div class="product-image">
-                <img src={`/products/${item.image}`} alt={item.title} />
+                <img transition:name={transitionNameImage} src={`/products/${image}`} alt={title} />
             </div>
             <div class="quick-description">
                 <div class="text">
-                    <p>{item.description ?? ""}</p>
+                    <p>{description ?? ""}</p>
                     <ul>
-                        {item.points.map((point) => 
+                        {points.map((point) => 
                             <li>
                                 <img src="/icons/check.svg" alt="check" aria-hidden />
                                 <span class="point-text">{point}</span>
@@ -54,7 +45,7 @@ const pitchRender = marked.parse(dedent(item.pitch ?? ''));
                     </ul>
                 </div>
                 <Tooltip title="Not an affiliate link!">
-                    <a class="styled" href={item.href}>Link To Item &nearr;</a>
+                    <a class="styled" href={href}>Link To Item &nearr;</a>
                 </Tooltip>
             </div>
         </div>
@@ -82,6 +73,10 @@ const pitchRender = marked.parse(dedent(item.pitch ?? ''));
     a.styled:hover::after {
         transform: scaleX(1) scaleY(1);
     }
+
+    a {
+        color: rgb(198, 49, 153);
+    }
 </style>
 
 <style>
@@ -90,17 +85,6 @@ const pitchRender = marked.parse(dedent(item.pitch ?? ''));
     }
     a {
         color: rgb(198, 49, 153);
-    }
-    h1 a {
-        text-decoration: none;
-        background-image: linear-gradient(
-            45deg,
-            rgb(195, 67, 180),
-            rgb(68, 11, 68)
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        margin-right: 0.5rem;
     }
     .product {
         display: grid;
@@ -116,7 +100,6 @@ const pitchRender = marked.parse(dedent(item.pitch ?? ''));
     .product img {
         max-height: 300px;
         max-width: 300px;
-        view-transition-name: product-image;
     }
     .quick-description {
         display: flex;

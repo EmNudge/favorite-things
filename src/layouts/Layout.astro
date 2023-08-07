@@ -1,4 +1,6 @@
 ---
+import { ViewTransitions } from 'astro:transitions';
+
 export interface Props {
 	title: string;
 	product?: {
@@ -22,9 +24,9 @@ const { title, product } = Astro.props;
 		<meta property="og:site_name" content="My Favorite Things">
 		{product && <>
 			<meta property="og:description" content={product.description}>
-			<meta property="og:image" content={product.image}>
+			<meta property="og:image" content={`/products/${product.image}`}>
 		</>}
-
+		<ViewTransitions />
 	</head>
 	<body>
 		<main>
@@ -33,10 +35,12 @@ const { title, product } = Astro.props;
 		<footer>
 			<div>None of these are affiliate links. I just like to share things.</div>
 			<div>
-				Inspiration: <a
-					href="https://aarohmankad.notion.site/Things-I-Love-36569f3b641f44139baa63288fea7c21"
-					>Things I Love</a
-				> by <a href="https://www.aarohmankad.com/">Aaroh Mankad</a>
+				Inspiration: 
+				<a href="https://aarohmankad.notion.site/Things-I-Love-36569f3b641f44139baa63288fea7c21">
+					Things I Love
+				</a> by <a href="https://www.aarohmankad.com/">
+					Aaroh Mankad
+				</a>
 			</div>
 		</footer>
 	</body>
@@ -65,19 +69,6 @@ const { title, product } = Astro.props;
 			transform: translateX(-30px);
 		}
 	}
-
-	/* ::view-transition-old(root), ::view-transition-new(root) {
-		animation: none;
-	}
-	::view-transition-old(main-title) {
-		animation: 90ms cubic-bezier(0.4, 0, 1, 1) both fade-out,
-			300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-to-left;
-	}
-
-	::view-transition-new(main-title) {
-		animation: 210ms cubic-bezier(0, 0, 0.2, 1) 90ms both fade-in,
-			300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-from-right;
-	} */
 
 	:root {
 		--accent: rgb(124, 58, 237);

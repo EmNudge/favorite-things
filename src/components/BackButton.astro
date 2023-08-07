@@ -1,0 +1,32 @@
+---
+const className = "back-btn-" + Math.random().toString(16).slice(2);
+---
+
+<a href="/" class={`styled ${className}`}>&larr;</a>
+
+<script define:vars={{ className }}>
+    const aTag = document.querySelector('.' + className);
+    const hasNavigatedFromMainPage = Boolean(sessionStorage.getItem('navigation'));
+    if (aTag && hasNavigatedFromMainPage) {
+        aTag.href = '#';
+        aTag.addEventListener('click', e => {
+            e.preventDefault();
+            history.back();
+        });
+    }
+</script>
+
+
+<style>
+  a {
+    text-decoration: none;
+    background-image: linear-gradient(
+        45deg,
+        rgb(195, 67, 180),
+        rgb(68, 11, 68)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-right: 0.5rem;
+  }
+</style>
