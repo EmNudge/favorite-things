@@ -269,7 +269,7 @@ export const favoriteThings = Object.entries(
         `,
       },
     ],
-    "Travel Gear": [
+    "Travel": [
       {
         href: "https://www.amazon.com/dp/B087QVKWLG/",
         title: "Osprey Backpack",
@@ -326,7 +326,7 @@ export const favoriteThings = Object.entries(
       },
       {
         href: "https://www.amazon.com/gp/product/B08QZ78DZF",
-        title: "Rechargable Batteries",
+        title: "Rechargeable Batteries",
         image: "battery.png",
         description: 'Lithium-ion and AA',
         points: ["long-lasting", "rechargeable", "no extra cables"],
@@ -338,6 +338,46 @@ export const favoriteThings = Object.entries(
             Some items will never upgrade to rechargeable lithium-ion batteries and some items use weirdly specific cables (e.g. every electric shaver). When traveling, it's important to cut down on extra items and stick to multi-use ones. I can stop worrying about "how much charge I have left" and just recharge these bad boys with a USB-C cable!
 
             Note that for these specifically, I found I had to use the included cable over a regular one to get any charge, but it's compact enough that it's not really an issue.
+        `,
+      },
+      {
+        href: "https://vuoriclothing.com/products/ponto-performance-jogger-charcoal-heather",
+        title: "Vuori Performance Pants",
+        image: "pants.png",
+        description: 'Comfortable and breathable',
+        points: ["soft", "breathable", "storable"],
+        pitch: `
+            Found these in a Reddit thread. On the pricier end of joggers at ~$100, but super worth it if you travel enough.
+
+            Biggest downside is that the pockets are very loose. If you have anything heavy, they'll swing a long and your wireless earbuds might fall out.
+        `,
+      },
+      {
+        href: "https://pairofthieves.com/products/superfit-boxer-brief-bear-pack",
+        title: "Pair Of Thieves Boxer Briefs",
+        image: "briefs.png",
+        description: 'Comfortable and breathable',
+        points: ["soft", "breathable", "storable"],
+        pitch: `
+            Hands down the cheapest boxer briefs for the quality you're getting.
+
+            Breathable is the name of the game when traveling. The nylon-elastic material makes these super comfortable and generally sweat resistant. If you're okay with wearing clothing for more than one day, this is a great option. It's less likely to smell or feel uncomfortable on day 2.
+        `,
+      },
+      {
+        href: "https://darntough.com/products/mens-merino-wool-the-standard-crew-lightweight-lifestyle-socks",
+        title: "Merino Wool Socks",
+        image: "socks.png",
+        description: 'Comfortable and breathable',
+        points: ["soft", "breathable", "storable"],
+        pitch: `
+            Merino wool has sort of taken over the travel and hiking space these days.
+
+            Its claim to fame is "moisture wicking". This means it moves moisture away from the skin, so it can evaporate and prohibit bacterial growth. The socks don't smell or feel weird to wear for a couple days in a row.
+
+            This also makes it great for long flights. I've had issues with other socks making my feet feel itchy on a long enough trip. No issues with these!
+
+            Darn Tough is a pretty good brand for these as they use a decently high percentage of merino wool in their products, but they're not the only company in this space. $20 may feel like a lot for a single pair of socks, but it's worth it!
         `,
       },
     ],
