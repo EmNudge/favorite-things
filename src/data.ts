@@ -27,7 +27,7 @@ export const favoriteThings = Object.entries(
 
             You can get one for under $30! *Fast, efficient, and cheap* is the holy trifecta here, but get a load of this:
 
-            > You can boil water for more things than coffee and tea. You can jumpstart your pot for noodles! 
+            > You can boil water for more things than coffee and tea. You can jump start your pot for noodles! 
             
             The possibilities are endless.
         `),
@@ -116,12 +116,12 @@ export const favoriteThings = Object.entries(
         href: "https://www.apple.com/shop/buy-mac/macbook-air/m1-chip",
         title: "M1+ Macbook",
         image: "macbook_m1.png",
-        description: "The best laptop, good for all ocassions",
+        description: "The best laptop, good for all occasions",
         points: ["very fast", "lightweight", "trackpad"],
         pitch: (`
-                If you're getting a macbook, it's gotta be something *M1* or later.
+                If you're getting a MacBook, it's gotta be something *M1* or later.
 
-                If you're not getting a macbook, you should probably get a macbook. They last forever (compared to competitors), they're fast, they're power efficient, they're light, and they're stylish. 
+                If you're not getting a MacBook, you should probably get a MacBook. They last forever (compared to competitors), they're fast, they're power efficient, they're light, and they're stylish. 
                 * If you're a programmer - they're unix based.
                 * If you're a designer - they've got nice screens.
                 * If you're a productivity freak - they've got a great trackpad and shortcuts system. 
@@ -133,7 +133,7 @@ export const favoriteThings = Object.entries(
         href: "https://www.apple.com/shop/buy-ipad/ipad",
         title: "iPad",
         image: "ipad.png",
-        description: "The best laptop, good for all ocassions",
+        description: "The best laptop, good for all occasions",
         points: ["reading", "drawing", "sculpting"],
         pitch: (`
                 Look, I don't know what Apple is doing, but Apple clearly knows what Apple is doing because they pop out banger products.
@@ -169,7 +169,7 @@ export const favoriteThings = Object.entries(
           "minimal features",
         ],
         pitch: (`
-                Smartwatches are cool. I don't love the aesthetics, but they help me get away from my phone without worrying about missing important notifications. My watch is my first line of defence before I get sucked into the warp of the most interesting device on the planet when trying to check up on texts. 
+                Smartwatches are cool. I don't love the aesthetics, but they help me get away from my phone without worrying about missing important notifications. My watch is my first line of defense before I get sucked into the warp of the most interesting device on the planet when trying to check up on texts. 
 
                 In the same regard, the upside over other smartwatches is that it has less features (so it's less distracting) and it can last 2 weeks (so you can sleep with it). You can also sleep with other watches, but then you can't have it on all day. Charging the watch for some amount of time needs to be built into the routine.
 
@@ -181,9 +181,9 @@ export const favoriteThings = Object.entries(
         title: 'E-ink Tablet',
         image: 'kindle.png',
         points: ['easy on eyes', 'long battery life', 'lightweight and small'],
-        description: 'Detatch from the internet, but keep your eyes on the screen',
+        description: 'Detach from the internet, but keep your eyes on the screen',
         pitch: `
-          E-ink tablets are a game changer for reading. The screen mimics real paper by magnatizing ink blobs instead of LEDs so it's easy on your eyes. You can read for hours without eye strain and with little decrease in battery life.
+          E-ink tablets are a game changer for reading. The screen mimics real paper by magnetizing ink blobs instead of LEDs so it's easy on your eyes. You can read for hours without eye strain and with little decrease in battery life.
 
           I like reading, but books are heavy. If you're commuting or vacationing, an e-ink tablet is perfect. They're lightweight, have long battery life, and hold thousands of books. The feel is never as nice as a real book, but it's a good compromise for convenience.
 
@@ -233,7 +233,7 @@ export const favoriteThings = Object.entries(
         description: "Sip sip yum yum water",
         points: ["water bottle", "with straw", "yum, water"],
         pitch: `
-            Let me guess, you're still on those hydroflasks? That's **so** 2018. All us cool kids are drinking from these new water bottles (with straws)!
+            Let me guess, you're still on those Hydro Flasks? That's **so** 2018. All us cool kids are drinking from these new water bottles (with straws)!
 
             Your time is precious! You've got businesses to do business with! You have meetings to meet! You have toddlers to fight! Why waste energy tilting the bottle up in the air?! Who knows what could happen?!
 
@@ -244,12 +244,12 @@ export const favoriteThings = Object.entries(
       },
       {
         href: "https://www.amazon.com/dp/B07DP6X7Q8",
-        title: "Cherry Chapstick",
+        title: "Cherry ChapStick",
         image: "chapstick.png",
         description: "Make lips smell good and not crack",
         points: ["lipstick (for MEN)", "yum yum cherry smell good", "be a non-chapped chap"],
         pitch: `
-            Burt's Bees can go missing for all I care! The real professionals use dollar-store cherry chapstick for keeping their smoochers nice and smooth.
+            Burt's Bees can go missing for all I care! The real professionals use dollar-store cherry ChapStick for keeping their smoochers nice and smooth.
 
             I keep one strapped on me at all times. Never leave home without it. My lips are perfectly smooth and ready for action. You never know when it will come in handy.
 
@@ -274,7 +274,7 @@ export const favoriteThings = Object.entries(
         href: "https://www.amazon.com/dp/B087QVKWLG/",
         title: "Osprey Backpack",
         image: "backpack.png",
-        description: "A backpack built like a suitecase",
+        description: "A backpack built like a suitcase",
         points: ["pockets", "suitcase-adjacent"],
         pitch: `
             If you're trying to 1-bag around you'll need to find a way to pack things effectively. This bag does a great job of being absolutely massive, but exactly fitting the carry-on requirements for airlines.
@@ -299,7 +299,7 @@ export const favoriteThings = Object.entries(
       {
         href: "https://www.amazon.com/gp/product/B081MK7B5C",
         title: "Collapsable Water Bottle",
-        image: "collapsable_watter_bottle.png",
+        image: "collapsable_water_bottle.png",
         description: 'Stay hydrated and carry less',
         points: ["weightless when empty", "only as big as it needs to be", "good for storing vinegar if you're into that idk"],
         pitch: `
