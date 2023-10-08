@@ -23,10 +23,12 @@ const { transitionNameImage, transitionNameTitle } = getTransitionName(title);
 
 <Layout title={title} product={{ description: description, image: image }}>
     <article>
-        <h1 transition:name={transitionNameTitle}>
+        <header>
             <BackButton />
-            {title}
-        </h1>
+            <h1 transition:name={transitionNameTitle}>
+                {title}
+            </h1>
+        </header>
 
         <div class="product">
             <div class="product-image">
@@ -45,7 +47,10 @@ const { transitionNameImage, transitionNameTitle } = getTransitionName(title);
                     </ul>
                 </div>
                 <Tooltip title="Not an affiliate link!">
-                    <a class="styled" href={href}>Link To Item &nearr;</a>
+                    <a class="styled" href={href}>
+                        <span>Link To Item</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 7H6a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2v-5"></path><path d="M10 14L20 4"></path><path d="M15 4h5v5"></path></g></svg>
+                    </a>
                 </Tooltip>
             </div>
         </div>
@@ -73,6 +78,9 @@ const { transitionNameImage, transitionNameTitle } = getTransitionName(title);
     a.styled:hover::after {
         transform: scaleX(1) scaleY(1);
     }
+    a.styled svg {
+        height: 1em;
+    }
 
     a {
         color: rgb(198, 49, 153);
@@ -80,8 +88,16 @@ const { transitionNameImage, transitionNameTitle } = getTransitionName(title);
 </style>
 
 <style>
-    h1 {
+    article {
+        font-family: 'system-ui', sans-serif;
+    }
+    article > header {
+        display: flex;
+        align-items: stretch;
+        gap: 0.5rem;
         margin-bottom: 2rem;
+        font-family: 'Shantell Sans', cursive;
+        font-size: 3em;
     }
     a {
         color: rgb(198, 49, 153);

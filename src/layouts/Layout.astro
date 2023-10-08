@@ -26,6 +26,7 @@ const { title, product } = Astro.props;
 			<meta property="og:description" content={product.description}>
 			<meta property="og:image" content={`/products/${product.image}`}>
 		</>}
+
 		<ViewTransitions />
 	</head>
 	<body>
@@ -46,6 +47,15 @@ const { title, product } = Astro.props;
 	</body>
 </html>
 <style is:global>
+	@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@500&display=swap');
+
+	:root, html {
+		font-family: 'Shantell Sans', cursive;
+	}
+	h1, h2 {
+		font-weight: 700;
+	}
+
 	@keyframes fade-in {
 		from {
 			opacity: 0;
@@ -80,19 +90,9 @@ const { title, product } = Astro.props;
 		);
 	}
 	html {
-		font-family: system-ui, sans-serif;
 		background-color: #f6f6f6;
 	}
-	main,
-	footer {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
-	footer {
-		padding: 3rem;
-		max-width: 60ch;
-	}
+
 	code {
 		font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
 			DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
@@ -104,5 +104,18 @@ const { title, product } = Astro.props;
 		font-size: 3rem;
 		font-weight: 800;
 		margin: 0;
+	}
+</style>
+<style>
+	main,
+	footer {
+		margin: auto;
+		padding: 1.5rem;
+		max-width: 650px;
+	}
+	footer {
+		padding: 3rem;
+		max-width: 650px;
+		font-family: system-ui, sans-serif;
 	}
 </style>

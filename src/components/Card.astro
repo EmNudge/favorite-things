@@ -53,7 +53,8 @@ const { transitionNameImage, transitionNameTitle } = getTransitionName(title);
 		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 	}
 	img {
-		height: 128px;
+		max-height: 128px;
+		max-width: 100%;
 	}
 	.link-card:is(:hover, :focus-within) {
 		background-position: 0;
