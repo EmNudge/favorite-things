@@ -15,7 +15,7 @@ export const favoriteThings = Object.entries(
       {
         href: "https://www.amazon.com/dp/B07TZ5YHJN",
         title: "Electric Kettle",
-        image: "kettle.png",
+        image: "kettle.webp",
         description: "Boil water with electricity! Turn off when it's done!",
         points: [
           "Little energy waste",
@@ -35,7 +35,7 @@ export const favoriteThings = Object.entries(
       {
         href: "https://www.amazon.com/dp/B00HHLNRVE",
         title: "Garlic Press",
-        image: "garlic_press.png",
+        image: "garlic_press.webp",
         description: 'A press for garlic. A "Garlic Press", if you will.',
         points: ["better than a knife!"],
         pitch: (`
@@ -49,7 +49,7 @@ export const favoriteThings = Object.entries(
       {
         href: "https://www.amazon.com/dp/B0047BIWSK",
         title: "Aeropress",
-        image: "aeropress.png",
+        image: "aeropress.webp",
         description:
           "An espresso maker, but worse, but also way more convenient!",
         points: ["portable", "works with coffee grounds", "quick cleanup"],
@@ -66,7 +66,7 @@ export const favoriteThings = Object.entries(
       {
         href: "https://www.amazon.com/dp/B000UAPQGS/",
         title: "A Good Chef's Knife",
-        image: "knife.png",
+        image: "knife.webp",
         description: "It's a knife... for cutting... things...",
         points: ["Versatile", "Make cooking feel nicer"],
         pitch: (`
@@ -80,7 +80,7 @@ export const favoriteThings = Object.entries(
       {
         href: "https://www.amazon.com/dp/B07FVQLBL3",
         title: "Electric Can Opener",
-        image: "can_opener.png",
+        image: "can_opener.webp",
         description: "Sit back and relax and also close your ears",
         points: ["no cuts", "no effort", "no friends"],
         pitch: (`
@@ -99,7 +99,7 @@ export const favoriteThings = Object.entries(
         href:
           "https://www.amazon.com/DRCM200GBAQ04-Steamer-Removable-Nonstick-Function/dp/B07DTPC1QB/",
         title: "Rice Cooker",
-        image: "rice_cooker.png",
+        image: "rice_cooker.webp",
         description: "It cooks your rice and also doesn't overcook it.",
         points: ["rice cooker", "cook rice", "rice get cooked"],
         pitch: (`
@@ -115,7 +115,7 @@ export const favoriteThings = Object.entries(
       {
         href: "https://www.apple.com/shop/buy-mac/macbook-air/m1-chip",
         title: "M1+ Macbook",
-        image: "macbook_m1.png",
+        image: "macbook_m1.webp",
         description: "The best laptop, good for all occasions",
         points: ["very fast", "lightweight", "trackpad"],
         pitch: (`
@@ -132,7 +132,7 @@ export const favoriteThings = Object.entries(
       {
         href: "https://www.apple.com/shop/buy-ipad/ipad",
         title: "iPad",
-        image: "ipad.png",
+        image: "ipad.webp",
         description: "The best laptop, good for all occasions",
         points: ["reading", "drawing", "sculpting"],
         pitch: (`
@@ -148,7 +148,7 @@ export const favoriteThings = Object.entries(
       {
         href: "https://www.amazon.com/dp/B00KCXMBES/",
         title: "Zoom H5 Recorder",
-        image: "zoom_h5.png",
+        image: "zoom_h5.webp",
         description: "A mobile recorder AND interface. Be with the pros!",
         points: ["silent recorder", "portable"],
         pitch: (`
@@ -160,7 +160,7 @@ export const favoriteThings = Object.entries(
       {
         href: "https://www.amazon.com/dp/B07HYX9P88/",
         title: "Garmin Instinct",
-        image: "garmin.png",
+        image: "garmin.webp",
         description: "A smart watch that you can wear - rain or shine",
         points: [
           "2 week battery",
@@ -179,7 +179,7 @@ export const favoriteThings = Object.entries(
       {
         href: 'https://www.amazon.com/dp/B09SWW583J',
         title: 'E-ink Tablet',
-        image: 'kindle.png',
+        image: 'kindle.webp',
         points: ['easy on eyes', 'long battery life', 'lightweight and small'],
         description: 'Detach from the internet, but keep your eyes on the screen',
         pitch: `
@@ -193,7 +193,7 @@ export const favoriteThings = Object.entries(
       {
         href: 'https://www.amazon.com/dp/B00CXSJUZS',
         title: 'Teenage Engineering OP-1',
-        image: 'op-1.png',
+        image: 'op-1.webp',
         points: [
           "synthesizer",
           "drum machine",
@@ -209,7 +209,7 @@ export const favoriteThings = Object.entries(
       {
         href: "https://www.amazon.com/dp/B09BBPTDWX/",
         title: "Corsair HS80",
-        image: "hs80.png",
+        image: "hs80.webp",
         description: "A wireless headset that isn't horrible",
         points: [
           "wireless",
@@ -229,7 +229,7 @@ export const favoriteThings = Object.entries(
       {
         href: "https://www.amazon.com/dp/B085DVGW6M/",
         title: "Water Bottle (with straw)",
-        image: "bottle.png",
+        image: "bottle.webp",
         description: "Sip sip yum yum water",
         points: ["water bottle", "with straw", "yum, water"],
         pitch: `
@@ -245,7 +245,7 @@ export const favoriteThings = Object.entries(
       {
         href: "https://www.amazon.com/dp/B07DP6X7Q8",
         title: "Cherry ChapStick",
-        image: "chapstick.png",
+        image: "chapstick.webp",
         description: "Make lips smell good and not crack",
         points: ["lipstick (for MEN)", "yum yum cherry smell good", "be a non-chapped chap"],
         pitch: `
@@ -259,7 +259,7 @@ export const favoriteThings = Object.entries(
       {
         href: "https://www.amazon.com/dp/B01CTKEKX6",
         title: "Mint Toothpicks",
-        image: "mint_toothpicks.png",
+        image: "mint_toothpicks.webp",
         description: "Minty flavor and a good fidget",
         points: ["get those popcorn kernels out", "minty taste", "feels like a cigarette (but healthier)"],
         pitch: `
@@ -273,7 +273,7 @@ export const favoriteThings = Object.entries(
       {
         href: "https://www.amazon.com/dp/B087QVKWLG/",
         title: "Osprey Backpack",
-        image: "backpack.png",
+        image: "backpack.webp",
         description: "A backpack built like a suitcase",
         points: ["pockets", "suitcase-adjacent"],
         pitch: `
@@ -285,7 +285,7 @@ export const favoriteThings = Object.entries(
       {
         href: "https://store.google.com/config/chromecast_google_tv",
         title: "Chromecast",
-        image: "chromecast.png",
+        image: "chromecast.webp",
         description: 'Transform a monitor into a TV',
         points: ["transform Hotel TVs", "keep your accounts logged in", "google assistant for dumb question"],
         pitch: `
@@ -299,7 +299,7 @@ export const favoriteThings = Object.entries(
       {
         href: "https://www.amazon.com/gp/product/B081MK7B5C",
         title: "Collapsable Water Bottle",
-        image: "collapsable_water_bottle.png",
+        image: "collapsable_water_bottle.webp",
         description: 'Stay hydrated and carry less',
         points: ["weightless when empty", "only as big as it needs to be", "good for storing vinegar if you're into that idk"],
         pitch: `
@@ -313,7 +313,7 @@ export const favoriteThings = Object.entries(
       {
         href: "https://www.amazon.com/gp/product/B0BNMVB18C",
         title: "Collapsable Neck Pillow",
-        image: "collapsable_neck_pillow.png",
+        image: "collapsable_neck_pillow.webp",
         description: 'Sleep well on the go',
         points: ["quick to expand", "quick to deflate", "absurd and funny looking (bonus points)"],
         pitch: `
@@ -327,7 +327,7 @@ export const favoriteThings = Object.entries(
       {
         href: "https://www.amazon.com/gp/product/B08QZ78DZF",
         title: "Rechargeable Batteries",
-        image: "battery.png",
+        image: "battery.webp",
         description: 'Lithium-ion and AA',
         points: ["long-lasting", "rechargeable", "no extra cables"],
         pitch: `
@@ -343,7 +343,7 @@ export const favoriteThings = Object.entries(
       {
         href: "https://vuoriclothing.com/products/ponto-performance-jogger-charcoal-heather",
         title: "Vuori Performance Pants",
-        image: "pants.png",
+        image: "pants.webp",
         description: 'Comfortable and breathable',
         points: ["soft", "breathable", "storable"],
         pitch: `
@@ -355,7 +355,7 @@ export const favoriteThings = Object.entries(
       {
         href: "https://pairofthieves.com/products/superfit-boxer-brief-bear-pack",
         title: "Pair Of Thieves Boxer Briefs",
-        image: "briefs.png",
+        image: "briefs.webp",
         description: 'Comfortable and breathable',
         points: ["soft", "breathable", "storable"],
         pitch: `
@@ -367,7 +367,7 @@ export const favoriteThings = Object.entries(
       {
         href: "https://darntough.com/products/mens-merino-wool-the-standard-crew-lightweight-lifestyle-socks",
         title: "Merino Wool Socks",
-        image: "socks.png",
+        image: "socks.webp",
         description: 'Comfortable and breathable',
         points: ["soft", "breathable", "storable"],
         pitch: `
@@ -386,7 +386,7 @@ export const favoriteThings = Object.entries(
         href:
           "https://leafshave.com/products/the-leaf-razor?variant=36865116504230",
         title: "Leaf Razor",
-        image: "leaf_razor.png",
+        image: "leaf_razor.webp",
         description: 'Use razor blades and also don\'t kill yourself',
         points: ["use regular blades", "clean shave"],
         pitch: `
@@ -400,7 +400,7 @@ export const favoriteThings = Object.entries(
       {
         href: "https://www.amazon.com/dp/B0747NLXSZ/",
         title: "Straight Edge Razor",
-        image: "straight_razor.png",
+        image: "straight_razor.webp",
         description: 'For REAL MANLY men and also me sometimes',
         points: ["eyebrow shaping", "scary (make feel cool)"],
         pitch: `
@@ -414,7 +414,7 @@ export const favoriteThings = Object.entries(
       {
         href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
         title: "JavaScript",
-        image: "javascript.png",
+        image: "javascript.webp",
         description: 'A language you\'ll probably have to use anyway',
         points: ["functional", "web", "the horrors oh the horrors", "already installed"],
         pitch: `
@@ -428,7 +428,7 @@ export const favoriteThings = Object.entries(
       {
         href: "https://www.rust-lang.org/",
         title: "Rust",
-        image: "rust.png",
+        image: "rust.webp",
         description: 'All who enter do not return',
         points: ["memory safe", "low/high level", "very cool", "join us"],
         pitch: `
