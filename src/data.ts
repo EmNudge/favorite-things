@@ -268,6 +268,19 @@ export const favoriteThings = Object.entries(
             It's also a good way to avoid habitual snacking. When your hands want to wander to some chips, pull out a toothpick instead. You also look super cool.
         `,
       },
+      {
+        href: 'https://www.merrell.com/US/en/hydro-moc/886129971694.html',
+        title: "Merrel Hydro Moc",
+        image: "hydro_moc.webp",
+        description: "Crocs but comfortable",
+        points: ["rubber", "speed mode", "ovals instead of circle"],
+        pitch: `
+          This is about merrel hydro moc crocks
+          Imagine if crocs were cool again! Imagine the possibility of having a crocs-like experience in your home, but with a more comfortable feel. Imagine a 5 dimensional dodecahedron in a 6 dimensional space.
+
+          Having a hard time? Yeah, me too, but these are super comfortable!
+        `
+      }
     ],
     "Travel": [
       {
