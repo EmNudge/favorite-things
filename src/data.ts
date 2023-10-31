@@ -275,10 +275,11 @@ export const favoriteThings = Object.entries(
         description: "Crocs but comfortable",
         points: ["rubber", "speed mode", "ovals instead of circle"],
         pitch: `
-          This is about merrel hydro moc crocks
           Imagine if crocs were cool again! Imagine the possibility of having a crocs-like experience in your home, but with a more comfortable feel. Imagine a 5 dimensional dodecahedron in a 6 dimensional space.
 
           Having a hard time? Yeah, me too, but these are super comfortable!
+
+          You'll look like a slightly cooler dork. Like if the guy with a pocket protector walked into 5th grade with sunglasses.
         `
       }
     ],
