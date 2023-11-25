@@ -28,6 +28,8 @@ const { title, product } = Astro.props;
 		</>}
 
 		<ViewTransitions />
+
+		<link href="/shantell-sans.woff2" rel="stylesheet">
 	</head>
 	<body>
 		<main>
@@ -47,8 +49,6 @@ const { title, product } = Astro.props;
 	</body>
 </html>
 <style is:global>
-	@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@500&display=swap');
-
 	:root, html {
 		font-family: 'Shantell Sans', cursive;
 	}
