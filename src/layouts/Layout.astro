@@ -29,7 +29,7 @@ const { title, product } = Astro.props;
 
 		<ViewTransitions />
 
-		<link href="/shantell-sans.woff2" rel="stylesheet">
+		<link href="/SingleDay-Regular.ttf" rel="stylesheet">
 	</head>
 	<body>
 		<main>
@@ -49,8 +49,10 @@ const { title, product } = Astro.props;
 	</body>
 </html>
 <style is:global>
+	@font-face { font-family: 'Single Day'; src: url('SingleDay-Regular.ttf'); } 
+
 	:root, html {
-		font-family: 'Shantell Sans', cursive;
+		font-family: 'Single Day', cursive;
 	}
 	h1, h2 {
 		font-weight: 700;
