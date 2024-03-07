@@ -312,8 +312,8 @@ export const favoriteThings = Object.entries(
       },
       {
         href: "https://www.amazon.com/gp/product/B081MK7B5C",
-        title: "Collapsable Water Bottle",
-        image: "collapsable_water_bottle.webp",
+        title: "Collapsible Water Bottle",
+        image: "collapsible_water_bottle.webp",
         description: 'Stay hydrated and carry less',
         points: ["weightless when empty", "only as big as it needs to be", "good for storing vinegar if you're into that idk"],
         pitch: `
@@ -326,8 +326,8 @@ export const favoriteThings = Object.entries(
       },
       {
         href: "https://www.amazon.com/gp/product/B0BNMVB18C",
-        title: "Collapsable Neck Pillow",
-        image: "collapsable_neck_pillow.webp",
+        title: "Collapsible Neck Pillow",
+        image: "collapsible_neck_pillow.webp",
         description: 'Sleep well on the go',
         points: ["quick to expand", "quick to deflate", "absurd and funny looking (bonus points)"],
         pitch: `
