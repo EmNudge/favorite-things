@@ -4,6 +4,7 @@ import Card from "../components/Card.astro";
 import Colors from "../components/Colors.astro";
 import Section from "../components/Section.astro";
 import { favoriteThings } from "../data";
+import type { FavoriteItem } from "../data";
 ---
 
 <Layout title="My Favorite Things">
@@ -13,9 +14,9 @@ import { favoriteThings } from "../data";
 
 	<h1>My <span class="text-gradient">Favorite</span> ...</h1>
 	{
-		favoriteThings.map(([title, items]) => (
+		favoriteThings.map(({ folder, items }) => (
 			<>
-				<Section title={title}>
+				<Section title={folder}>
 					<ul role="list" class="link-card-grid">
 						{items.map((item) => (
 							<Card {...item} />

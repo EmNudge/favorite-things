@@ -1,17 +1,16 @@
 ---
 import type { FavoriteItem } from '../data';
-import { getSlug } from '../utils/getSlug';
 import { getTransitionName } from '../utils/getTransitionName';
 
 export type Props = FavoriteItem;
 
-const { title, image } = Astro.props;
+const { title, image, slug } = Astro.props;
 
 const { transitionNameImage, transitionNameTitle } = getTransitionName(title);
 ---
 
 <li class="link-card">
-	<a href={`/${getSlug(title)}`}>
+	<a href={`/${slug}`}>
 		<h2 transition:name={transitionNameTitle}>{title}</h2>
 		<img transition:name={transitionNameImage} src={`/products/${image}`} alt={title}>
 	</a>

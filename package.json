@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "astro": "^2.10.1",
+    "gray-matter": "^4.0.3",
     "marked": "^4.2.12"
   },
   "devDependencies": {
-    "@types/marked": "^4.0.8"
+    "@types/marked": "^4.0.8",
+    "@types/node": "^20.11.30"
   }
 }
