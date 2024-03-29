@@ -10,3 +10,5 @@ description: A wallet for cards and like one dollar bill (no coins)
 ---
 
 Look man, I don't know. I use it every day. 
+
+It's thin, it's east, it forced me to constrain on what I take with me. You don't need that Spencer's card and you're not going to CostCo every day. You don't need to be THAT prepared.
