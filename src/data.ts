@@ -227,6 +227,16 @@ export const favoriteThings = Object.entries(
     ],
     "Every Day Carry": [
       {
+        href: 'https://www.amazon.com/dp/B077CQXBWV',
+        title: 'Slim Wallet',
+        image: 'wallet.webp',
+        description: 'A wallet for cards and like one dollar bill (no coins)',
+        points: ['not bulky', 'cheaper than Ridge', 'RFID something something'],
+        pitch: `
+          Look man, I don't know. I use it every day. 
+        `
+      },
+      {
         href: "https://www.amazon.com/dp/B085DVGW6M/",
         title: "Water Bottle (with straw)",
         image: "bottle.webp",
@@ -270,7 +280,7 @@ export const favoriteThings = Object.entries(
       },
       {
         href: 'https://www.merrell.com/US/en/hydro-moc/886129971694.html',
-        title: "Merrel Hydro Moc",
+        title: "Merrell Hydro Moc",
         image: "hydro_moc.webp",
         description: "Crocs but comfortable",
         points: ["rubber", "speed mode", "ovals instead of circle"],
@@ -355,7 +365,7 @@ export const favoriteThings = Object.entries(
         `,
       },
       {
-        href: "https://vuoriclothing.com/products/ponto-performance-jogger-charcoal-heather",
+        href: "https://vuoriclothing.com/products/ponto-performance-pant-black-heather",
         title: "Vuori Performance Pants",
         image: "pants.webp",
         description: 'Comfortable and breathable',
