@@ -9,6 +9,7 @@ export interface FavoriteItem {
   points: string[];
   description: string;
   pitch: string;
+  slug: string;
 }
 type FavoriteThings = { folder: string, items: FavoriteItem[] }[];
 
@@ -23,7 +24,7 @@ export const favoriteThings = fs.readdirSync(contentDir).map(folder => {
     const slug = file.slice(0, -3);
     return { pitch: content, slug, ...(data as any) } as FavoriteItem;
   });
-  
+
   return { folder, items };
 }) as FavoriteThings;
 
