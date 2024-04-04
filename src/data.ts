@@ -11,7 +11,16 @@ export interface FavoriteItem {
   pitch: string;
   slug: string;
 }
-type FavoriteThings = { folder: string, items: FavoriteItem[] }[];
+
+const categoryOrdering = [
+  'Every Day Carry',
+  'Travel',
+  'Kitchen Tools',
+  'Tech',
+  'Personal Care Tools',
+  'Programming Languages',
+  'HTML Colors',
+];
 
 const contentDir = './src/content';
 export const favoriteThings = fs.readdirSync(contentDir).map(folder => {
@@ -26,6 +35,11 @@ export const favoriteThings = fs.readdirSync(contentDir).map(folder => {
   });
 
   return { folder, items };
-}) as FavoriteThings;
+}).sort((a, b) => {
+  const aIndex = categoryOrdering.indexOf(a.folder);
+  const bIndex = categoryOrdering.indexOf(b.folder);
+  return aIndex - bIndex;
+});
+
 
 export const allThings = favoriteThings.map(section => section.items).flat();
