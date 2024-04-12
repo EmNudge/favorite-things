@@ -1,110 +1,130 @@
 ---
 const colors = [
-	"salmon",
-	"burlywood",
-	"steelblue",
-	"papayawhip",
-	"tomato",
-	"dodgerblue",
-	"coral",
-	"mediumseagreen",
-	"mediumpurple",
-	"sandybrown",
-	"lightslategray",
+  "salmon",
+  "burlywood",
+  "steelblue",
+  "papayawhip",
+  "tomato",
+  "dodgerblue",
+  "coral",
+  "mediumseagreen",
+  "mediumpurple",
+  "sandybrown",
+  "lightslategray",
 ];
 ---
 
 <script>
-    const colorsList = document.querySelector('ul.colors');
-    if (colorsList) {
-        colorsList.classList.add('js-enabled');
-        colorsList.addEventListener('click', e => {
-            const isColor = e.target instanceof HTMLSpanElement || e.target instanceof HTMLLIElement;
-            if (!isColor) return;
-            const color = e.target.textContent;
-            document.documentElement.style.setProperty('--accent', color);
-        });
-    }
+  const colorsList = document.querySelector("ul.colors");
+  if (colorsList) {
+    colorsList.classList.add("js-enabled");
+    colorsList.addEventListener("click", (e) => {
+      const isColor =
+        e.target instanceof HTMLSpanElement ||
+        e.target instanceof HTMLLIElement;
+      if (!isColor) return;
+      const color = e.target.textContent;
+      document.documentElement.style.setProperty("--accent", color);
+    });
+  }
 </script>
 
 <ul role="list" class="colors">
-    {colors.map(color => <li class="color" style={`--color: ${color};`}>
+  {
+    colors.map((color) => (
+      <li class="color" style={`--color: ${color};`}>
         <span>{color}</span>
-    </li>)}
+      </li>
+    ))
+  }
 </ul>
 
 <style>
-	ul {
-		list-style: none;
-		margin: 0;
-		padding: 0;
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: .5rem;
-        color: black;
-        position: relative;
-        padding: .5rem;
-	}
-    ul::before, ul::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-    ul::before {
-        width: 100%;
-        height: 100%;
-        background: white;
-        border-radius: 5px;
-    }
-    ul::after {
-        --spread: -.25rem;
-        top: var(--spread);
-        left: var(--spread);
-        right: var(--spread);
-        bottom: var(--spread);
-        border-radius: 8px;
-        z-index: -1;
-        background-image: linear-gradient(45deg, var(--accent), var(--accent) 30%, transparent 60%);
-        background-size: 400%;
-        background-position: -1724px;
-        transition: .5s;
-    }
-    ul.js-enabled:hover::after {
-        background-position: 0px;
-    }
-	li {
-		border-radius: 0.35rem;
-        overflow: hidden;
-		box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
-        position: relative;
-	}
-    li:before {
-        content: '';
-        background: var(--color);
-        filter: contrast(1.8) brightness(1.6);
-        z-index: -1;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-    span {
-        width: 100%;
-        padding: 1rem;
-        box-sizing: border-box;
-        display: inline-block;
-        background-image: linear-gradient(45deg, var(--color), var(--color) 30%, transparent 60%);
-        background-size: 200%;
-        background-position: -40px;
-        transition: .25s;
-    }
-    li:hover span {
-        background-position: -80px;
-        mix-blend-mode: difference;
-    }
-    ul.js-enabled li:hover span {
-        cursor: pointer;
-    }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+    gap: 0.5rem;
+    color: black;
+    position: relative;
+    padding: 0.5rem;
+  }
+  ul::before,
+  ul::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  ul::before {
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 5px;
+  }
+  ul::after {
+    --spread: -0.15rem;
+    top: var(--spread);
+    left: var(--spread);
+    right: var(--spread);
+    bottom: var(--spread);
+    border-radius: 8px;
+    z-index: -1;
+    background-image: linear-gradient(
+      45deg,
+      var(--accent),
+      var(--accent) 30%,
+      transparent 60%
+    );
+    background-size: 400%;
+    background-position: -1724px;
+    transition: 0.5s;
+  }
+  ul.js-enabled:hover::after {
+    background-position: 0px;
+  }
+  li {
+    border-radius: 0.35rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  li:before {
+    content: "";
+    background: var(--color);
+    filter: contrast(1.8) brightness(1.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  span {
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    display: inline-block;
+    background-image: linear-gradient(
+      45deg,
+      var(--color),
+      var(--color) 20%,
+      transparent 50%,
+      var(--color) 99%
+    );
+    opacity: .8;
+    background-size: 200%;
+    background-position: -20px;
+    transition: 0.25s;
+    border: 5px solid transparent;
+  }
+  li:hover span {
+    background-position: -40px;
+    border: 5px solid var(--color);
+  }
+  ul.js-enabled li:hover span {
+    cursor: pointer;
+  }
 </style>
