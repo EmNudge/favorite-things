@@ -20,7 +20,7 @@ const categoryOrdering = Object.fromEntries([...[
 
 export const favoriteThings = fetch(import.meta.env.API_URL)
   .then((res) =>
-    res.json() as unknown as { folder: string; items: FavoriteItem[] }[]
+    res.json() as Promise<{ folder: string; items: FavoriteItem[] }[]>
   )
   .then((data) =>
     data.sort((a, b) => {
