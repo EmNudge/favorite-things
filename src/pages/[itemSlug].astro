@@ -3,16 +3,16 @@ import Layout from "../layouts/Layout.astro";
 import Tooltip from "../components/Tooltip.astro";
 import BackButton from "../components/BackButton.astro";
 import { marked } from "marked";
-import { allThings } from "../data";
+import { allThingsPromise } from "../data";
 import { dedent } from "../utils/dedent";
 import { getTransitionName } from "../utils/getTransitionName";
 
-export function getStaticPaths() {
-    return allThings.map(({ slug }) => ({ params: { itemSlug: slug } }));
+export async function getStaticPaths() {
+    return (await allThingsPromise).map(({ slug }) => ({ params: { itemSlug: slug } }));
 }
 
 const { itemSlug } = Astro.params;
-const item = allThings.find((thing) => thing.slug === itemSlug);
+const item = (await allThingsPromise).find((thing) => thing.slug === itemSlug);
 
 if (!item) return Astro.redirect("/404");
 const { title, description, image, points, pitch, href } = item;
