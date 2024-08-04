@@ -12,7 +12,7 @@ export interface FavoriteItem {
   slug: string;
 }
 
-const categoryOrdering = [
+const categoryOrdering = Object.fromEntries([...[
   'Every Day Carry',
   'Travel',
   'Kitchen Tools',
@@ -20,7 +20,7 @@ const categoryOrdering = [
   'Personal Care Tools',
   'Programming Languages',
   'HTML Colors',
-];
+].entries()].map(([index, key]) => [key, index]));
 
 const contentDir = './src/content';
 export const favoriteThings = fs.readdirSync(contentDir).map(folder => {
@@ -35,11 +35,7 @@ export const favoriteThings = fs.readdirSync(contentDir).map(folder => {
   });
 
   return { folder, items };
-}).sort((a, b) => {
-  const aIndex = categoryOrdering.indexOf(a.folder);
-  const bIndex = categoryOrdering.indexOf(b.folder);
-  return aIndex - bIndex;
-});
+}).sort((a, b) => categoryOrdering[a.folder] - categoryOrdering[b.folder]);
 
 
 export const allThings = favoriteThings.map(section => section.items).flat();
