@@ -1,5 +1,5 @@
 ---
-href: https://www.amazon.com/dp/B077CQXBWV
+href: https://www.amazon.com/dp/B07GXH36J5
 title: Slim Wallet
 image: wallet.webp
 points:
