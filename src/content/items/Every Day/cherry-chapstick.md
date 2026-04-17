@@ -1,7 +1,7 @@
 ---
-href: https://www.amazon.com/dp/B07DP6X7Q8
-title: Cherry ChapStick
-image: chapstick.webp
+href: 'https://www.amazon.com/dp/B07DP6X7Q8'
+title: Vaseline Lip Balm
+image: vaseline-lip-balm.webp
 points:
   - lipstick (for MEN)
   - yum yum cherry smell good
